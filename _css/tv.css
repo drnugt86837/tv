@@ -1,0 +1,495 @@
+  body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #FBFFFD;
+  }
+  
+  a {
+      color: #006000;
+      text-decoration: none;
+  }
+  /* 卷軸樣式 */
+  
+   ::-webkit-scrollbar {
+      width: 16px;
+      height: 16px;
+      background-color: #F5F5F5;
+  }
+  
+   ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  
+   ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: #555;
+  }
+  /* header */
+  
+  .top {
+      position: relative;
+      width: 100%;
+      height: 90px;
+  }
+  
+  .sky {
+      width: 100%;
+      height: 100px;
+      z-index: 100;
+      position: fixed;
+      top: 0;
+      background-color: white;
+  }
+  
+  .sky-container {
+      padding-bottom: 0;
+      position: relative;
+  }
+  
+  .logo {
+      width: 300px;
+      height: 100%;
+      float: left;
+      position: relative;
+  }
+  
+  .search {
+      border-radius: 10px;
+      border: 1px solid #02DF82;
+      float: left;
+      width: 300px;
+      height: 30px;
+      overflow: hidden;
+      margin-top: 12px;
+      position: relative;
+  }
+  
+  .search input[type='text'] {
+      border: 0;
+      height: 100%;
+      width: 170px;
+      outline: 0;
+      padding-left: 5px;
+      
+  }
+  
+  .search button {
+      width: 41px;
+      height: 30px;
+      background-color: #02DF82;
+      border: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: white;
+      cursor: pointer;
+  }
+  
+  ul.list li {
+      width: 70px;
+      height: 20px;
+      float: right;
+      line-height: 70px;
+      position: relative;
+      list-style: none;
+  }
+  
+  .navBar {
+      list-style-type: none;
+      text-align: center;
+      background-color: #02DF82;
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      top: 95px;
+  }
+  
+  .navBar li {
+      display: inline-block;
+      padding: 20px 40px 20px 40px;
+  }
+  
+  .navBar li:hover {
+      background-color: #4F4F4F;
+  }
+  
+  .navBar li a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+  }
+  
+  .lis2 {
+      visibility: hidden;
+  }
+  /* 漢堡 */
+  
+  .hammanu {
+      float: right;
+      visibility: hidden;
+  }
+  /* 通知 */
+  
+  #panel {
+      background-color: white;
+      display: none;
+      position: absolute;
+      right: 30px;
+      width: 280px;
+      height: 360px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
+  }
+  
+  .notice {
+      text-align: center;
+      height: 30px;
+      background-color: #E8FFF5;
+      border-radius: 20px;
+  }
+  
+  .msg {
+      height: 300px;
+      overflow-y: scroll;
+  }
+  
+  .msg h4 {
+      background-color: #93FF93;
+  }
+  /* 卡片特效 */
+  
+  .card a img:hover {
+      width: 100%;
+      height: 100%;
+  }
+  
+  .card-body {
+      padding: 0;
+  }
+  
+  .card-body a img {
+      width: 80%;
+      height: 80%;
+      transition: 0.5s;
+  }
+  
+  .card {
+      border: 0;
+      height: 410px;
+  }
+  /* footer */
+  
+  .footer1 {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 4rem;
+  }
+  
+  .footer {
+      width: 100%;
+      background-color: #ADADAD;
+  }
+  
+  .footer-navBar {
+      flex: 1 1 auto;
+      display: flex;
+  }
+  
+  .footer-link {
+      flex-basis: 25%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 1rem;
+  }
+  /* 電梯 */
+  
+  .elevator {
+      position: fixed;
+      bottom: 0;
+      right: 100px;
+  }
+  /* 影片大小 彈幕  */
+  
+  .videocontent {
+      position: relative;
+      width: 100%;
+  }
+  
+  .video-placeholder {
+      position: relative;
+      float: left;
+      height: 578px;
+      width: 1024px;
+      animation: bgColor 10s infinite alternate;
+  }
+  
+  .screen_container {
+      position: absolute;
+      height: 527px;
+      width: 1024px;
+      overflow: hidden;
+      opacity: 0.5;
+  }
+  
+  .screen_toolbar {
+      width: 700px;
+      text-align: center;
+      margin: 10px auto;
+  }
+  /* 影片內容  */
+  
+  .vedio-container {
+      width: 100%;
+  }
+  
+  .buttoncontent {
+      width: 100%;
+      overflow: auto;
+  }
+  
+  .textcontent {
+      width: 100%;
+      overflow: auto;
+  }
+  /* 頁數 */
+  
+  ul.pagination {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+  }
+  
+  ul.pagination li {
+      display: inline;
+  }
+  
+  ul.pagination li a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  
+  ul.pagination li a.active {
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+  }
+  
+  ul.pagination li a:hover:not(.active) {
+      background-color: #ddd;
+  }
+  
+  .page {
+      text-align: center;
+  }
+  /* 登入畫面 */
+  
+  .box {
+      box-shadow: 0 6px 17px 0 rgba(0, 0, 0, .1);
+      width: 40%;
+      height: 600px;
+      padding-top: 10px;
+      text-align: center;
+      margin: 50px auto;
+      padding: 60px;
+  }
+  /* 登入註冊 */
+  
+  .box2 {
+      box-shadow: 0 6px 17px 0 rgba(0, 0, 0, .1);
+      width: 40%;
+      height: 600px;
+      padding-top: 10px;
+      text-align: center;
+      margin: 50px auto;
+      padding: 60px;
+  }
+  
+  .form-control:focus {
+      border-color: #02DF82;
+      box-shadow: 0 0 0 0.2rem #02DF82;
+  }
+  /* 時間表 */
+  
+  .time img {
+      width: 10%;
+      height: 140px;
+  }
+  /* RWD */
+  
+  @media screen and (max-width:1238px) {
+      .box2 {
+          width: 50%;
+      }
+      .box {
+          width: 50%;
+      }
+  }
+  
+  @media screen and (max-width:1000px) {
+      .navBar li {
+          padding: 20px 20px 20px 20px;
+      }
+      .logo {
+          width: 150px;
+          height: 100%;
+          float: left;
+          position: relative;
+      }
+      .search {
+          float: left;
+          width: 200px;
+          height: 30px;
+          margin-top: 12px;
+          position: relative;
+      }
+      .card a img:hover {
+          width: 90%;
+          height: 100%;
+      }
+      .card-body a img {
+          width: 70%;
+          height: 80%;
+          transition: 0.5s;
+      }
+      .card {
+          height: 210px;
+      }
+      .elevator {
+          visibility: hidden;
+      }
+      .footer-link {
+          flex-basis: 25%;
+          display: flex;
+          flex-direction: column;
+          margin-right: 1rem;
+      }
+      .footer1 {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 4rem;
+      }
+      .video-placeholder {
+          height: 400px;
+          width: 700px;
+      }
+      .screen_container {
+          height: 350px;
+          width: 700px;
+      }
+      .screen_toolbar {
+          width: 600px;
+      }
+      .box {
+          width: 60%;
+      }
+      .box2 {
+          width: 50%;
+          height: 700px;
+      }
+      .time img {
+          width: 20%;
+      }
+  }
+  
+  @media screen and (max-width:650px) {
+      .navBar li {
+          padding: 20px 5px 20px 5px;
+          text-align: auto;
+      }
+      .list {
+          visibility: hidden;
+      }
+      .footer1 {
+          width: 100%;
+          padding-top: 3rem;
+          padding-bottom: 2rem;
+      }
+      .footer-link a {
+          display: none;
+      }
+      .footer-link {
+          display: flex;
+          margin-right: 0;
+      }
+      .video-placeholder {
+          height: 240px;
+          width: 400px;
+      }
+      .screen_container {
+          height: 200px;
+          width: 400px;
+      }
+      .screen_toolbar {
+          width: 300px;
+      }
+      .box {
+          width: 70%;
+      }
+      .box2 {
+          width: 70%;
+      }
+      .time img {
+          width: 30%;
+      }
+  }
+  
+  @media screen and (max-width:376px) {
+      .navBar {
+          margin-bottom: 0;
+          width: 100%;
+          height: 60px;
+          padding: 0;
+      }
+      .navBar li {
+          padding: 20px 2px 20px 2px;
+          text-align: auto;
+      }
+      .navBar li a {
+          border: 100px;
+      }
+      .list {
+          display: none;
+      }
+      .menu img {
+          height: 40px;
+      }
+      .logo {
+          float: right;
+          margin-top: 20px;
+      }
+      .search {
+          display: none;
+      }
+      .hammanu {
+          float: left;
+          visibility: visible;
+          margin-top: 10px;
+      }
+      .footer-link {
+          display: none;
+      }
+      .video-placeholder {
+          height: 220px;
+          width: 350px;
+      }
+      .screen_container {
+          height: 200px;
+          width: 350px;
+      }
+      .box {
+          width: 100%;
+      }
+      .box2 {
+          width: 100%;
+      }
+      .time img {
+          width: 40%;
+      }
+  }
